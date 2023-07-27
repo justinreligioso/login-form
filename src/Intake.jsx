@@ -90,7 +90,7 @@ class Intake extends React.Component {
             mode:'no-cors',
             body: JSON.stringify({
                 // title: 'React POST Request Example' 
-                Disaster_Recovery_Preferences: "uhhhhhhh",
+                Disaster_Recovery_Preferences: "ANOTHER test #2",
                 Infrastructure_Required: true,
                 Helpdesk_Required: true
             }),
@@ -104,8 +104,8 @@ class Intake extends React.Component {
         fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddApp", {
             method: 'POST',
             mode:'no-cors',
-            body: JSON.stringify({
-                Aide_App_ID: 'ishika test id' ,
+            body: JSON.stringify({                              
+                Aide_App_ID: 'ANOTHER test#2 id' ,
                 App_Name: "test app name",
                 App_Service_Description: "test app service description",
                 Software_Type: "test software type",
@@ -119,79 +119,79 @@ class Intake extends React.Component {
         })
 
         // * Env
-        fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddEnv", {
-            method: 'POST',
-            mode:'no-cors',
-            body: JSON.stringify({
-                ENV_ID: 'ishika env id' ,
-                Num_Environments: 1,
-                ENV_Request_Prod: "string",
-                ENV_Request_DR: "string",
-                ENV_Request_Stage: "string",
-                ENV_Request_Test: "string",
-                ENV_Request_Dev: "string",
-                ENV_Request_High_Avail: "string"
-            }),
-            headers: {
-                "Content-type": 'application/json'
-            }
+        // fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddEnv", {
+        //     method: 'POST',
+        //     mode:'no-cors',
+        //     body: JSON.stringify({
+        //         ENV_ID: 'ishika env id' ,
+        //         Num_Environments: 1,
+        //         ENV_Request_Prod: "string",
+        //         ENV_Request_DR: "string",
+        //         ENV_Request_Stage: "string",
+        //         ENV_Request_Test: "string",
+        //         ENV_Request_Dev: "string",
+        //         ENV_Request_High_Avail: "string"
+        //     }),
+        //     headers: {
+        //         "Content-type": 'application/json'
+        //     }
             
-        })
+        // })
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-        // * Business
-        fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddBusiness", {
-            method: 'POST',
-            mode:'no-cors',
-            body: JSON.stringify({
-                Bus_ID: "",
-                SLO_Name: "" ,
-                Bus_Segment:"",
-                Bus_Owner:"",
-                Technical_Owner: "me"
-            }),
-            headers: {
-                "Content-type": 'application/json'
-            }
+        // *  Business
+        // fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddBusiness", {
+        //     method: 'POST',
+        //     mode:'no-cors',
+        //     body: JSON.stringify({
+        //         Bus_ID: "",
+        //         SLO_Name: "" ,
+        //         Bus_Segment:"",
+        //         Bus_Owner:"",
+        //         Technical_Owner: "me"
+        //     }),
+        //     headers: {
+        //         "Content-type": 'application/json'
+        //     }
             
-        })
+        // })
 
         
         // * Architect
 
-        fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddArchitect", {
-            method: 'POST',
-            mode:'no-cors',
-            body: JSON.stringify({
-                Architect_Reviewer_ID : "",
-                Architect_Review_Date : "",
-                Architect_Reviewer : "",
-                Architect_Reviewer_Comments : ""
-            }),
-            headers: {
-                "Content-type": 'application/json'
-            }
+        // fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddArchitect", {
+        //     method: 'POST',
+        //     mode:'no-cors',
+        //     body: JSON.stringify({
+        //         Architect_Reviewer_ID : "",
+        //         Architect_Review_Date : "",
+        //         Architect_Reviewer : "",
+        //         Architect_Reviewer_Comments : ""
+        //     }),
+        //     headers: {
+        //         "Content-type": 'application/json'
+        //     }
             
-        })
+        // })
 
         // * Arch_App
 
-        fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddArch_App", {
-            method: 'POST',
-            mode:'no-cors',
-            body: JSON.stringify({
-                Architect_Reviewer_ID : "",
-                Aide_App_ID : "",
-                App_Review_status : "",
-                OS_Platform : "",
-                App_Status : "",
-                Cloud_Op_Status : ""
-            }),
-            headers: {
-                "Content-type": 'application/json'
-            }
+        // fetch("https://jacob-tdp-backend.azurewebsites.net/api/AddArch_App", {
+        //     method: 'POST',
+        //     mode:'no-cors',
+        //     body: JSON.stringify({
+        //         Architect_Reviewer_ID : "",
+        //         Aide_App_ID : "",
+        //         App_Review_status : "",
+        //         OS_Platform : "",
+        //         App_Status : "",
+        //         Cloud_Op_Status : ""
+        //     }),
+        //     headers: {
+        //         "Content-type": 'application/json'
+        //     }
             
-        })
+        // })
 
 
 
@@ -215,6 +215,7 @@ class Intake extends React.Component {
     render() {
         const { postId } = this.state;
         return (
+            
             <div className = "card text-center m-3">
                 <h2>Intake</h2> 
                 <h5 className="card-header"> Simple POST Request</h5>
